@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div id="location" class="location">
+            <h2 class="cityName" id="cityName"></h2>
+            <div class="dot">
+                <i class="fa-solid fa-location-dot"></i>
+                <p id="city" class="city"></p>
+                <span class="spanTime">Time:  <p id="time"></p></span>
+                <span class="spanDate">Date:  <p id="dateTime" class="date"></p></span>
+            </div>
+        </div>
+
+        <div class="searchContainer">
+            <div class="searchBox">
+                <input type="text" class="searchInput" id="searchInput" placeholder="Enter City">
+                <i id="search" class="fa-solid fa-magnifying-glass"></i>
+            </div>    
+        </div>
+
+        <div class="bottomContainer">
+            <nav>
+                <ul>
+                    <li>Weather</li>
+                    <li>News & Events</li>
+                    <li>Gallery</li>
+                </ul>
+            </nav>
+            <div class="weatherInfo">
+                <div class="temp" id="temp">
+                    <div class="tempDisplayImage">
+                        <h2 id="currentTemp" class="currentTemp"></h2>
+                        <img src="img/2682829_degrees_farenheit_forecast_temprerature_weather_icon (1).png" alt="" width="50px" days>
+                        <div id="imageDisplay" class="imageDisplay">
+                        </div>
+                    </div>
+                    <div id="WeatherDiscription" class="WeatherDiscription">
+                        <i class="fa-solid fa-water" width="50px"></i>
+                        <p id="currentcondition" class="currentcondition"></p>
+                        <img src="img/5729377_weather_windy_climate_forecast_storm_icon.png" alt="" width="50px">
+                        <p id="windSpeed" class="windSpeed"></p>
+                    </div>
+                    <div class="windHumidity">
+                        <p>Humidity</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+                <div class="dayOne days">
+                    <p class="dayOneDay"></p>
+                    <img src="" alt="" width="60">
+                    <p class="dayOneTemp"></p>
+                </div>
+                <div class="dayTwo days">
+                    <p class="dayTwoDay"></p>
+                    <img src="" alt="" width="60">
+                    <p class="dayTwoTemp"></p>
+                </div>
+                <div class="dayThree days">
+                    <p class="dayThreeDay"></p>
+                    <img src="" alt="" width="60">
+                    <p class="dayThreeTemp"></p>
+                </div>
+                <div class="dayFour days">
+                    <p class="dayFourDay"></p>
+                    <img src="" alt="" width="60">
+                    <p class="dayFourTemp"></p>
+                </div>
+                <div class="dayFive days">
+                    <p class="dayFiveDay"></p>
+                    <img src="" alt="" width="60">
+                    <p class="dayFiveTemp"></p>
+                </div>
+                <div class="daySix days">
+                    <p class="daySixDay"></p>
+                    <img src="" alt="" width="60">
+                    <p class="daySixTemp"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+    
+    <script src="main.js"></script>
+</body>
+</html>
